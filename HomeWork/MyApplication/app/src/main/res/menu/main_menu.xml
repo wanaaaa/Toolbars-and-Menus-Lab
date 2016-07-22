@@ -3,13 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_share"
+        android:id="@+id/iconOne"
         android:icon="@android:drawable/ic_menu_share"
-        android:title="asdf"
-        app:showAsAction="ifRoom"/>
+        android:title="MenuOne"
+        app:showAsAction="always"/>
 
-    <item android:id="@+id/action_settings"
+    <item android:id="@+id/iconTwo"
         android:icon="@android:drawable/ic_input_add"
-        android:title="asddf"
-        app:showAsAction=""/>
+        android:title="MenuTwo"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/icoThree"
+        android:icon="@android:drawable/ic_btn_speak_now"
+        android:title="MenuThree"
+        app:showAsAction="always"/>
 </menu>
