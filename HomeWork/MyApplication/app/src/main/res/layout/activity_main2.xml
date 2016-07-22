@@ -14,21 +14,19 @@
         android:id="@+id/toolbarLow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
         android:background="?attr/colorControlNormal"
-        android:elevation="10dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:theme="@style/ThemeOverlay.AppCompat.Light">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="I am a lower toolbar!"/>
-    </android.support.v7.widget.Toolbar>
+        android:elevation="10dp"/>
+        <!--android:theme="@style/ThemeOverlay.AppCompat.ActionBar"-->
+        <!--app:theme="@style/ThemeOverlay.AppCompat.Light">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="I am a lower toolbar!"/>-->
+        <!--</android.support.v7.widget.Toolbar>-->
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="I am MainActivity2"
         android:id="@+id/textView"
         android:layout_centerVertical="true"

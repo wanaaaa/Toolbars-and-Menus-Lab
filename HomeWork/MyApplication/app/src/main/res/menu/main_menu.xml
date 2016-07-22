@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
         android:id="@+id/iconOne"
         android:icon="@android:drawable/ic_menu_share"
         android:title="MenuOne"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom"/>
 
     <item android:id="@+id/iconTwo"
         android:icon="@android:drawable/ic_input_add"

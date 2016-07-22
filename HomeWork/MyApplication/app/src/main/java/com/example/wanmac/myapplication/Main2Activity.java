@@ -1,21 +1,11 @@
 package com.example.wanmac.myapplication;
 
-import android.net.Uri;
 import android.os.Bundle;
-import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
+public class Main2Activity extends AppCompatActivity {
 
-public class Main2Activity extends Activity {
-
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,48 +16,32 @@ public class Main2Activity extends Activity {
         toolbarLow = (Toolbar) findViewById(R.id.toolbarLow);
         //toobarLow = (Toolbar) findViewById(R.id.toolbarLow) ;
         setSupportActionBar(toolbarLow);
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.main_menu, menu);
+//
+//        return super.onCreateOptionsMenu(menu);
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item){
+//        switch (item.getItemId()){
+//            case R.id.iconOne:
+//                //startActivity(new Intent(this, Main2Activity.class));
+//                Toast.makeText(Main2Activity.this, "One clicked", Toast.LENGTH_SHORT).show();
+//                return true;
+//            case R.id.iconTwo:
+//                Toast.makeText(Main2Activity.this, "Two Clicked", Toast.LENGTH_SHORT).show();
+//                return true;
+//            case R.id.icoThree:
+//                Toast.makeText(Main2Activity.this, "Three Clicked", Toast.LENGTH_SHORT).show();
+//                return true;
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client.connect();
-        Action viewAction = Action.newAction(
-                Action.TYPE_VIEW, // TODO: choose an action type.
-                "Main2 Page", // TODO: Define a title for the content shown.
-                // TODO: If you have web page content that matches this app activity's content,
-                // make sure this auto-generated web page URL is correct.
-                // Otherwise, set the URL to null.
-                Uri.parse("http://host/path"),
-                // TODO: Make sure this auto-generated app URL is correct.
-                Uri.parse("android-app://com.example.wanmac.myapplication/http/host/path")
-        );
-        AppIndex.AppIndexApi.start(client, viewAction);
-    }
 
-    @Override
-    public void onStop() {
-        super.onStop();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        Action viewAction = Action.newAction(
-                Action.TYPE_VIEW, // TODO: choose an action type.
-                "Main2 Page", // TODO: Define a title for the content shown.
-                // TODO: If you have web page content that matches this app activity's content,
-                // make sure this auto-generated web page URL is correct.
-                // Otherwise, set the URL to null.
-                Uri.parse("http://host/path"),
-                // TODO: Make sure this auto-generated app URL is correct.
-                Uri.parse("android-app://com.example.wanmac.myapplication/http/host/path")
-        );
-        AppIndex.AppIndexApi.end(client, viewAction);
-        client.disconnect();
-    }
 }
